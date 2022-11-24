@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
+import { Navbar} from './components/navbar/Navbar';
+import { Menu1} from './components/Menu/Menu';
 
 
 function App() {
-  const nome = 'Daniela';
-
 
   return (
     <> 
-      
+      <Navbar /> 
+      <Menu1 />
     </>
   );
 }
