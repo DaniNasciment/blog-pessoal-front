@@ -4,6 +4,7 @@ import './App.css';
 import { Footer } from './components/estaticos/Footer/Footer';
 import { Navbar } from './components/estaticos/navbar/Navbar';
 import { Home } from './components/paginas/home/Home';
+import Login from './components/paginas/login/Login';
 
 
 function App() {
@@ -11,7 +12,12 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+
+        <Route path="/" element={<Home />} />
+
         <Route path="/home" element={<Home />} />
+
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </Router>
